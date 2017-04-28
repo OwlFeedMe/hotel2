@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class Habitacion extends HttpServlet  {
+public class Alquiler extends HttpServlet {
        protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -59,6 +59,7 @@ public class Habitacion extends HttpServlet  {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+       @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
@@ -72,6 +73,7 @@ public class Habitacion extends HttpServlet  {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+       @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
@@ -82,6 +84,7 @@ public class Habitacion extends HttpServlet  {
      *
      * @return a String containing servlet description
      */
+       @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>

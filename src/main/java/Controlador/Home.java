@@ -35,27 +35,25 @@ public class Home extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("Proveedores")) {
-                response.sendRedirect("Peticion_Proveedores.html");
+            if (boton.equals("Hotel")) {
+                response.sendRedirect("Hotel.html");
             }
-            if (boton.equals("Residencia")) {
-                response.sendRedirect("Peticion_Residencia.html");
+            if (boton.equals("Grupo")) {
+                response.sendRedirect("Grupo.html");
             }
-            if (boton.equals("Asignar Habitacion")) {
-                response.sendRedirect("Peticion_Habitacion.html");
+            if (boton.equals("Alquiler")) {
+                response.sendRedirect("Alquiler.html");
             }
-            if (boton.equals("Aseo")) {
-                response.sendRedirect("Peticion_Aseo.html");
+            if (boton.equals("Personas")) {
+                response.sendRedirect("Personas.html");
             }
-            if (boton.equals("Estudiante")) {
-                response.sendRedirect("Peticion_Estudiante.html");
+            if (boton.equals("Habitacion")) {
+                response.sendRedirect("Habitacion.html");
             }
-            if (boton.equals("Asignar Estudiante")) {
-                response.sendRedirect("Peticion_AsignarEstudiante.html");
-            } 
-            if (boton.equals("Listar")) {
-                response.sendRedirect("Listar.html");
+            if (boton.equals("Disponibilidad")) {
+                response.sendRedirect("Disponibilidad.html");
             }
+            
         }
     }
 
